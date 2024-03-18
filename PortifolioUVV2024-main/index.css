@@ -1,0 +1,11 @@
+
+* {
+    background-color: black;
+        opacity: calc(1);
+    color: whitesmoke;
+        
+}
+
+section.skills {
+    background-color: blueviolet;
+}
