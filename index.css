@@ -1,33 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 body {
     color: whitesmoke;
     background-color: black;
-}
-
-main {
-    background-color: rgb(40, 212, 54);
-}
-
-    
-div {
-    background-color: rgb(32, 0, 243);
-    text-align: center;
-}
-
-div h2 {
-    border: 1px solid white    
+    font-family: "Rubik", sans-serif;
 }
 
 section * {
     text-align: center;
+    margin: 0%;
+    text-justify: auto;
+}
+
+#about {
+    background-color: rgb(32, 0, 243);
+    text-align: center;
+}
+
+#about p {
+    font-size: 100%;
+}
+
+h2 {
+    border: 1px solid white;
+}
+
+#formations {
+    background-color: darkslategrey;
 }
 
 #skills {
     background-color: coral;
-    text-align: left;
 }
 
-#skills h2 {
-    border: 1px solid white;
+#idiomas {
+    background-color: green;
 }
 
 table, th, td {
@@ -60,4 +67,3 @@ tr:nth-last-child(2) {
 tr:nth-last-child(2) td {
     color: blue;
 }
-
