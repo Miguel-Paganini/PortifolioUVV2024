@@ -1,3 +1,7 @@
+body {
+    color: whitesmoke;
+    background-color: black;
+}
 
 main {
     background-color: rgb(40, 212, 54);
@@ -6,5 +10,54 @@ main {
     
 div {
     background-color: rgb(32, 0, 243);
+    text-align: center;
+}
+
+div h2 {
+    border: 1px solid white    
+}
+
+section * {
+    text-align: center;
+}
+
+#skills {
+    background-color: coral;
+    text-align: left;
+}
+
+#skills h2 {
+    border: 1px solid white;
+}
+
+table, th, td {
+    border: 1px solid whitesmoke;
+    border-collapse: collapse;
+}
+
+table {
+    background-color: black;
+    width: 25%;
+    text-align: center;
+}
+
+td, th {
+    color: white;
+}
+
+tbody tr:first-child {
+    background-color: darkslategrey;
+}
+
+tr:nth-child(2) {
+    background-color: darkslateblue;
+}
+
+tr:nth-last-child(2) {
+    background-color: aqua;
+}
+
+tr:nth-last-child(2) td {
+    color: blue;
 }
 
