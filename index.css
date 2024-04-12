@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #000;   
+    background-color: #161616;   
 }
 
 .interface {
@@ -19,7 +19,7 @@ body {
     display: flex;
 }
 
-/* ESTILIZAÇÃO MENU */
+/* ESTILIZAÇÃO DO MENU */
 
 header {
     padding: 20px 4%;
@@ -37,10 +37,11 @@ header .inicio a {
     color: #7e7e7e;
     display: inline-block;
 }
+    
 
 header .inicio a:hover {
     transform: scale(1.05);
-    color: #fff;
+    color: #7CFC00;
     transition: .2s;
 }
 
@@ -53,7 +54,7 @@ header .menu a {
 
 header .menu a:hover {
     transform: scale(1.07);
-    color: #fff;
+    color: #7CFC00;
     transition: .2s;
     
 }
@@ -71,6 +72,7 @@ header .menu ul li {
 
 section.home {
     padding: 40px 4%;
+    padding-bottom: 20%;
 }
 
 section.home .flex {
@@ -84,7 +86,7 @@ section.home .flex {
 }
 
 .home h1 {
-    color: #fff;
+    color: #7CFC00;
     font-weight: 400;
     font-size: 50px;
 }
@@ -103,7 +105,7 @@ section.home .flex {
 }
 
 .home_texto a:hover {
-    color: #fff;
+    color: #7CFC00;
 }
 
 .home_texto ul li {
@@ -116,18 +118,28 @@ section.home .flex {
     transition: 0.2s;
 }
 
+@keyframes flutuar {
+    0% {
+    top: 0px;
+    }
+    100% {
+        top: 30px;
+    }
+}
+
 .home_img img {
     width: 400px;
-    border: 4px solid ;
-    border-radius: 20%;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
 }
+
 
 /* ESTILIZAÇÃO SOBRE MIM */
 
 section.about .flex {
     justify-content: center;
     align-content: center;
-    gap: 40px;
+    gap: 100px;
 }
 
 .about {
@@ -136,11 +148,25 @@ section.about .flex {
 
 .about .about_texto {
     color: #fff;
-    padding: 100px 0px;
+    padding: 50px 0px;
+}
+
+.about .about_texto h2 {
+    color: #7CFC00;
+    font-size: 40px;
+    padding: 20px 0px;
+    font-weight: 500;
+}
+
+.about .about_texto p {
+    font-weight: 300;
+    color: #7e7e7e;
+    font-size: 20px;
 }
 
 .about img {
-    width: 400px;
-    border: 1px solid;
-    border-radius: 20%;
+    width: 25rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 2rem black;
 }
+    
