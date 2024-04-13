@@ -19,6 +19,13 @@ body {
     display: flex;    
 }
 
+h2.titulo {
+    color: #9840fd;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 80px;
+}
 
 /* ESTILIZAÇÃO DO MENU */
 
@@ -50,7 +57,6 @@ header .menu a {
     text-decoration: none;
     color: #7e7e7e;
     display: inline-block;
-    
 }
 
 header .menu a:hover {
@@ -97,7 +103,6 @@ section.home .flex {
     font-weight: 300;
     font-size: 30px;
 }
-
 
 
 .home_texto a {
@@ -156,7 +161,7 @@ section.about .flex {
 
 .about .about_texto h2 {
     color: #9840fd;
-    font-size: 40px;
+    font-size: 50px;
     padding: 20px 0px;
     font-weight: 500;
 }
@@ -170,7 +175,7 @@ section.about .flex {
 .about img {
     width: 25rem;
     border-radius: 2rem;
-    box-shadow: 0 0 2rem black;
+    box-shadow: 0 0 20px black;
 }
     
 /* ESTILIZAÇÃO das skills */
@@ -182,14 +187,6 @@ section.skills {
 
 section.skills .flex {
     gap: 60px;
-}
-
-h2.titulo {
-    color: #9840fd;
-    font-size: 50px;
-    font-weight: 500;
-    text-align: center;
-    padding-bottom: 80px;
 }
 
 .skills .skills_box {
@@ -208,4 +205,115 @@ h2.titulo {
 .skills .skills_box h3 {
     font-size: 30px;
     margin: 15px 0;
+}
+
+/* ESTILIZAÇÃO dos projetos */
+
+section.projects {
+    padding: 10% 4%;
+    padding-bottom: 10%;
+    background-color: #161616; 
+}
+
+.projects .flex {
+    gap: 80px;
+}
+
+.projects .projects_box {
+    background-color: black;
+    background-size: cover;
+    width: 360px;
+    height: 460px;
+    border-radius: 40px;
+    cursor: pointer;
+    background-position: 100% 0%;    
+    position: relative;
+    transition: background-position 6s, box-shadow 0.5s;
+}
+
+.projects .projects_box:hover {        
+    background-position: 100% 100%;
+    box-shadow: 0 0 20px #9840fd;    
+}
+
+.projects .projects_box .overlay {
+    color: #9840fd;
+    font-size: 30px;
+    font-weight: 500;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000004f;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;   
+}
+
+.projects .projects_box .overlay:hover {
+    opacity: 1;
+    transition: 1s;
+}
+
+/* ESTILIZAÇÃO do contato */
+
+section.contact {
+    padding: 10% 4%;
+    padding-bottom: 10%;
+}
+
+
+/* ESTILIZAÇÃO do footer */
+
+footer.rodape .interface {
+    border-top: 2px solid #7e7e7e;
+}
+
+footer.rodape {
+    padding: 2% 4%;    
+}
+
+footer.rodape .flex {
+    justify-content: space-between;
+    align-content: center;
+}
+
+footer.rodape .coluna1 {
+    padding: 5%;
+    color: #7e7e7e;
+}
+
+footer.rodape .coluna2 {
+    padding: 5%;
+}
+
+footer.rodape .coluna2 ul {
+    display: flex;
+}
+
+footer.rodape .coluna2 li {
+    display: inline-block;
+    padding: 10px 10px;
+}
+
+footer.rodape .coluna2 a {
+    text-decoration: none;
+    color: #7e7e7e;
+}
+
+footer.rodape .coluna2 a:hover {
+    color: #9840fd;
+}
+
+footer.rodape .coluna2 ul li {
+    display: inline-block;
+    padding: 10px 10px;
+}
+
+footer.rodape .coluna2 ul li:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
 }
