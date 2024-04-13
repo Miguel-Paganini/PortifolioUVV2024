@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #161616;   
+    background-color: hsl(0deg 0% 5.49%);
 }
 
 .interface {
@@ -16,8 +16,9 @@ body {
 }
 
 .flex {
-    display: flex;
+    display: flex;    
 }
+
 
 /* ESTILIZAÇÃO DO MENU */
 
@@ -41,7 +42,7 @@ header .inicio a {
 
 header .inicio a:hover {
     transform: scale(1.05);
-    color: #7CFC00;
+    color: #9840fd;
     transition: .2s;
 }
 
@@ -54,7 +55,7 @@ header .menu a {
 
 header .menu a:hover {
     transform: scale(1.07);
-    color: #7CFC00;
+    color: #9840fd;
     transition: .2s;
     
 }
@@ -71,8 +72,8 @@ header .menu ul li {
 /* estilização seção home */
 
 section.home {
-    padding: 40px 4%;
-    padding-bottom: 20%;
+    padding: 10% 4%;
+    padding-bottom: 10%; 
 }
 
 section.home .flex {
@@ -86,7 +87,7 @@ section.home .flex {
 }
 
 .home h1 {
-    color: #7CFC00;
+    color: #9840fd;
     font-weight: 400;
     font-size: 50px;
 }
@@ -105,7 +106,7 @@ section.home .flex {
 }
 
 .home_texto a:hover {
-    color: #7CFC00;
+    color: #9840fd;
 }
 
 .home_texto ul li {
@@ -143,7 +144,9 @@ section.about .flex {
 }
 
 .about {
-    padding: 40px 4%;
+    padding: 10% 4%;
+    padding-bottom: 10%; 
+    background-color: #161616;
 }
 
 .about .about_texto {
@@ -152,7 +155,7 @@ section.about .flex {
 }
 
 .about .about_texto h2 {
-    color: #7CFC00;
+    color: #9840fd;
     font-size: 40px;
     padding: 20px 0px;
     font-weight: 500;
@@ -170,3 +173,39 @@ section.about .flex {
     box-shadow: 0 0 2rem black;
 }
     
+/* ESTILIZAÇÃO das skills */
+
+section.skills {
+    padding: 10% 4%;
+    padding-bottom: 10%; 
+}
+
+section.skills .flex {
+    gap: 60px;
+}
+
+h2.titulo {
+    color: #9840fd;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.skills .skills_box {
+    color: #7e7e7e;
+    padding: 40px;
+    border: 2PX solid hsl(0deg 0% 5.49%);
+    border-radius: 20px;    
+}
+
+.skills .skills_box:hover {
+    transform: scale(1.03);
+    transition: 0.5s;
+    box-shadow: 0 0 20px #9840fd;
+}
+
+.skills .skills_box h3 {
+    font-size: 30px;
+    margin: 15px 0;
+}
