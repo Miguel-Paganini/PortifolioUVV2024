@@ -27,6 +27,8 @@ h2.titulo {
     padding-bottom: 80px;
 }
 
+/* Fim do geral */
+
 /* ESTILIZAÇÃO DO MENU */
 
 header {
@@ -75,7 +77,9 @@ header .menu ul li {
     padding: 15px 20px;
 }
 
-/* estilização seção home */
+/* Fim do menu */
+
+/* estilização do home */
 
 section.home {
     padding: 10% 4%;
@@ -139,6 +143,7 @@ section.home .flex {
     animation: flutuar 2s ease-in-out infinite alternate;
 }
 
+/* Fim do home */
 
 /* ESTILIZAÇÃO SOBRE MIM */
 
@@ -156,12 +161,11 @@ section.about .flex {
 
 .about .about_texto {
     color: #fff;
-    padding: 50px 0px;
 }
 
 .about .about_texto h2 {
     color: #9840fd;
-    font-size: 50px;
+    font-size: 55px;
     padding: 20px 0px;
     font-weight: 500;
 }
@@ -169,7 +173,7 @@ section.about .flex {
 .about .about_texto p {
     font-weight: 300;
     color: #7e7e7e;
-    font-size: 20px;
+    font-size: 23px;
 }
 
 .about img {
@@ -177,8 +181,10 @@ section.about .flex {
     border-radius: 2rem;
     box-shadow: 0 0 20px black;
 }
-    
-/* ESTILIZAÇÃO das skills */
+
+/* Fim do sobre mim */
+
+/* ESTILIZAÇÃO das conhecimentos */
 
 section.skills {
     padding: 10% 4%;
@@ -193,7 +199,9 @@ section.skills .flex {
     color: #7e7e7e;
     padding: 40px;
     border: 2PX solid hsl(0deg 0% 5.49%);
-    border-radius: 20px;    
+    border-radius: 20px;  
+    cursor: pointer;
+    width: 100%;  
 }
 
 .skills .skills_box:hover {
@@ -206,6 +214,13 @@ section.skills .flex {
     font-size: 30px;
     margin: 15px 0;
 }
+
+.skills p {
+    font-size: 18px;
+    width: 100%;
+}
+
+/* Fim dos conhecimentos */
 
 /* ESTILIZAÇÃO dos projetos */
 
@@ -220,7 +235,7 @@ section.projects {
 }
 
 .projects .projects_box {
-    background-color: black;
+    background-color: hsl(0deg 0% 5.49%);
     background-size: cover;
     width: 360px;
     height: 460px;
@@ -236,35 +251,82 @@ section.projects {
     box-shadow: 0 0 20px #9840fd;    
 }
 
-.projects .projects_box .overlay {
-    color: #9840fd;
-    font-size: 30px;
+.projects .projects_box .overlay a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
     font-weight: 500;
+}
+
+.projects .projects_box .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #0000004f;
+    background-color: #00000073;
     border-radius: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 0;   
 }
-
+    
 .projects .projects_box .overlay:hover {
     opacity: 1;
     transition: 1s;
 }
 
-/* ESTILIZAÇÃO do contato */
+
+
+/* Fim dos projetos */
+
+/* ESTILIZAÇÃO do Fale comigo */
 
 section.contact {
     padding: 10% 4%;
     padding-bottom: 10%;
+    color: #7e7e7e;
 }
 
+section.contact .flex {
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .inputo {
+    padding: 10px 0;
+}
+
+.contact form label {
+    display: inline-block;
+    font-size: 35px;
+    padding: 20px 0;    
+}
+
+.contact form input, textarea {
+    border: 0;
+    border: 2px solid #7e7e7e;
+    border-radius: 5px;
+    background-color: hsl(0deg 0% 5.49%);
+    color: #fff;
+    width: 800PX;
+    min-height: 50px ;
+    font-size: 20px;
+}
+
+.contact input[type="submit"] {
+    border: 1px solid hsl(0deg 0% 5.49);
+    border-radius: 10%;
+    width: 90px;
+    height: 55px;
+    font-size: 18px;
+    background-color: #9840fd;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Fim do fale comigo */
 
 /* ESTILIZAÇÃO do footer */
 
@@ -317,3 +379,11 @@ footer.rodape .coluna2 ul li:hover {
     transform: scale(1.1);
     transition: 0.2s;
 }
+
+footer.rodape .coluna1 h3 {
+    font-size: 25px;
+    font-weight: 500;
+    color: #9840fd;
+}
+
+/* Fim do footer */
