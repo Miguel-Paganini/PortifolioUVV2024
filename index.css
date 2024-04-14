@@ -242,7 +242,7 @@ section.projects {
     border-radius: 40px;
     background-position: 100% 0%;    
     position: relative;
-    transition: background-position 6s, box-shadow 0.5s;
+    transition: background-position 8s, box-shadow 0.5s;
 }
 
 .projects .projects_box:hover {        
