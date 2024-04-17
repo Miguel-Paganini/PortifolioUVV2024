@@ -222,12 +222,52 @@ section.skills .flex {
 
 /* Fim dos conhecimentos */
 
+/* ESTILIZAÇÃO das experiências */
+
+.experiencias {
+    background-color: #161616;
+    padding: 10% 4%;
+}
+
+.experiencias .flex {
+    align-items: center;
+    flex-direction: column;
+}
+
+article.conteudo {
+    margin: 20px;
+    border: 2px solid #9840fd;
+    border-radius: 20px;
+    padding: 10px;
+    min-width: 1000px;
+    max-width: 1000px;
+    height: auto;
+}
+
+.conteudo span {
+    color: #9840fd;
+    font-size: 30px;  
+}
+
+.conteudo h3 {
+    color: #9840fd;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.conteudo p {
+    font-size: 20px;
+    color: #7e7e7e;
+}
+
+/* Fim das experiências */
+
 /* ESTILIZAÇÃO dos projetos */
 
 section.projects {
     padding: 10% 4%;
     padding-bottom: 10%;
-    background-color: #161616; 
+    background-color: hsl(0deg 0% 5.49%); 
 }
 
 .projects .flex {
@@ -235,7 +275,7 @@ section.projects {
 }
 
 .projects .projects_box {
-    background-color: hsl(0deg 0% 5.49%);
+    background-color: #161616;
     background-size: cover;
     width: 360px;
     height: 460px;
@@ -287,6 +327,7 @@ section.contact {
     padding: 10% 4%;
     padding-bottom: 10%;
     color: #7e7e7e;
+    background-color: #161616;
 }
 
 section.contact .flex {
@@ -341,7 +382,8 @@ footer.rodape .interface {
 }
 
 footer.rodape {
-    padding: 2% 4%;    
+    padding: 2% 4%;
+    background-color: #161616;    
 }
 
 footer.rodape .flex {
