@@ -12,11 +12,11 @@ body {
 
 .interface {
     max-width: 1300px;
-    margin: 0 auto;  
+    margin: auto;
 }
 
 .flex {
-    display: flex;    
+    display: flex;
 }
 
 h2.titulo {
@@ -89,11 +89,11 @@ section.home {
 section.home .flex {
     justify-content: center;
     align-content: center;
-    gap: 80px;
+    gap: 10%;
 }
 
 .home_texto {
-    padding: 100px 0;
+    padding: 10% 0;
 }
 
 .home h1 {
@@ -138,7 +138,8 @@ section.home .flex {
 }
 
 .home_img img {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
 }
@@ -242,6 +243,7 @@ article.conteudo {
     min-width: 1000px;
     max-width: 1000px;
     height: auto;
+    box-shadow: 0 0 10px #000;
 }
 
 .conteudo span {
@@ -283,6 +285,7 @@ section.projects {
     background-position: 100% 0%;    
     position: relative;
     transition: background-position 8s, box-shadow 0.5s;
+    box-shadow: 0 0 5px black;
 }
 
 .projects .projects_box:hover {        
@@ -328,6 +331,7 @@ section.contact {
     padding-bottom: 10%;
     color: #7e7e7e;
     background-color: #161616;
+    width: 100%;
 }
 
 section.contact .flex {
@@ -435,3 +439,75 @@ footer.rodape .coluna1 h3 {
 }
 
 /* Fim do footer */
+
+/* MEDIA QUERYS */
+
+@media screen and (max-width: 800px) {
+    
+    .interface, .contact, .home, .cabecalho, .rodape, .skills, .about, .projects, .experiencias{
+        width: 100%;
+    }
+    
+    .cabecalho .menu ul{
+        display: none;               
+    }
+
+    .cabecalho .inicio a {
+        font-size: 50px;
+    }
+
+    .cabecalho .inicio {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .home .flex {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .about .flex {
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+
+    .skills .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills .skills_box {
+        width: 100%;
+    }
+
+
+    .experiencias .conteudo {
+        width: 100%;
+        max-width: 600px;
+        min-width: auto;
+    }
+
+    .projects .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects_box {
+        width: 100%;
+        max-width: 600px;
+        min-width: auto;
+    }
+
+    .contact .flex {
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    .contact form input {
+        width: 100%;
+    }
+}
