@@ -108,7 +108,6 @@ section.home .flex {
     font-size: 30px;
 }
 
-
 .home_texto a {
     text-decoration: none;
     color: #7e7e7e;
@@ -473,7 +472,6 @@ footer.rodape .coluna1 h3 {
         flex-direction: column-reverse;
     }
 
-
     .skills .flex {
         flex-direction: column;
         align-items: center;
@@ -482,7 +480,6 @@ footer.rodape .coluna1 h3 {
     .skills .skills_box {
         width: 100%;
     }
-
 
     .experiencias .conteudo {
         width: 100%;
@@ -506,7 +503,6 @@ footer.rodape .coluna1 h3 {
         align-items: center;
     }
     
-
     .contact form input {
         width: 100%;
     }
